@@ -2,8 +2,8 @@
 
 apt-get update;							# Get the package list update
 apt-get install git;						# Install Git
-#git clone https://github.com/fixxxer/chocho_task;		# Download the files needed from Git
-#cd chocho_task;						# Change directory
+git clone https://github.com/fixxxie/lucid;			# Download the files needed from Git
+cd lucid;							# Change directory
 cp systemd/lucid.service /etc/systemd/system/lucid.service;	# Copy service file
 cp systemd/pwd_file /etc/pwd_file;				# Copy password file
 chown root:root /etc/pwd_file;					# Change owner of the password file
