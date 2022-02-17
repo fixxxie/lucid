@@ -1,0 +1,17 @@
+[Unit]
+Description=lucid-client
+
+Wants=network.target
+After=syslog.target network-online.target
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/pwd_file
+ExecStart=/bin/sh -c '/bin/cat /etc/pwd_file | lucid daemon --fs test1.lucid --user testuser'
+ExecStop=/usr/bin/lucid exit
+Restart=on-failure
+RestartSec=10
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
