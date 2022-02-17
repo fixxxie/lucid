@@ -16,3 +16,10 @@
 ### Overview of the architecture
 
 ![Logical schema](lucid_logic.png "Logical schema")
+
+#### TO DO:
+  1. Make pwd_file not visible to public
+  2. Restrain ssh logins to a certain IP/IP range
+  3. Test and possibly automate the process via Ansible/Terraform
+  4. Enahnce Ngnix security /dhparam, require stronger ssl cypher, configure ssl timeout etc./
+  5. HTTP redirect to HTTPS
