@@ -17,6 +17,3 @@ cp nginx/nginx-selfsigned.key /etc/ssl/private/nginx-selfsigned.key;	# Copy priv
 systemctl enable nginx;							# Enable Nginx service
 systemctl start nginx;							# Start Nginx service
 ufw allow  443;								# Nginx port
-ufw allow 10080;							# SSH port
-ufw default deny;							# Default rule is Deny
-ufw enable;								# Enable the firewall
