@@ -15,3 +15,4 @@
 
 ### Overview of the architecture
 
+![Logical schema](lucid_logic.png "Logical schema")
